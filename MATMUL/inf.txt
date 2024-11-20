@@ -1,0 +1,18 @@
+Last argument:
+
+0: CPU
+1: GPU global memory
+2: GPU shared memory (cache manual)
+
+Example:
+
+➜  lab02-matmul git:(master) ✗ ./prog $((2**15)) 10 1
+GPU matmul (classic)
+B(16, 16, 1),   G(2048, 2048, 1)
+ok
+Time: 35473.128906
+➜  lab02-matmul git:(master) ✗ ./prog $((2**15)) 10 2
+GPU matmul (shared mem)
+B(16, 16, 1),   G(2048, 2048, 1)
+ok
+Time: 26609.839844
