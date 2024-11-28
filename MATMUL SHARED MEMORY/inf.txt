@@ -1,0 +1,17 @@
+First argument:
+
+Matrix size
+
+Second argument:
+
+Block size
+
+Example:
+
+(base) jose@jose-OMEN-Laptop-15-ek0xxx:~/Desktop/Parallel-computing-on-GPU/MATMUL SHARED MEMORY$ ./prog $((2**15)) 16
+Tiempo (sin shared memory): 16.3414 ms
+Tiempo (con shared memory): 0.001715 ms
+(base) jose@jose-OMEN-Laptop-15-ek0xxx:~/Desktop/Parallel-computing-on-GPU/MATMUL SHARED MEMORY$ ./prog $((2**8)) 16
+Tiempo (sin shared memory): 0.132811 ms
+Tiempo (con shared memory): 0.097177 ms
+(base) jose@jose-OMEN-Laptop-15-ek0xxx:~/Desktop/Parallel-computing-on-GPU/MATMUL SHARED MEMORY$ 
